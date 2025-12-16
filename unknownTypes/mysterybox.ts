@@ -15,9 +15,9 @@
 
 // (Hint: You will need typeof for the string, and Array.isArray() for the array).
 
-function printLength(input: unknown){
-    if(typeof input === 'string' || Array.isArray(input)) return input.length
-    else return 'Cannot measure length'
+function printLength(input: unknown): void{
+    if(typeof input === 'string' || Array.isArray(input)) console.log(input.length)
+    else console.log('Cannot measure length')
 }
 
 // console.log(printLength('hello'))   //TEST
